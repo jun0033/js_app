@@ -5,7 +5,7 @@
   var number = [10,20,30];
   number[1] = 50
   console.log(number[1]);
-  
+
   function calc() {
     var num = 0;
     for(var i=1; i<=10; i++){
@@ -15,4 +15,17 @@
   }
   var result = calc();
   console.log(result)
-</script>
+  var obj1 = {
+    name: "よしお",
+    greet: function(age, from) {
+      console.log(this.name + "です、はじめました");
+      console.log("年齢は" + age + "歳です");
+      console.log("出身地は" + from + "です");
+    }
+  };
+  var obj2 = {
+    name: "百合子"
+  };
+  var param = [6, "アメリカ"];
+  obj1.greet.apply(obj2,param);
+  </script>
