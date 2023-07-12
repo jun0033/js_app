@@ -1,6 +1,10 @@
 <button onclick="alert('こんにちは');">クリック</button>
 <button onclick="sayHello();">クリック</button>
 <button onclick="open('homes/top2', null, 'width=300,height=150');">開く</button>
+<input id="tx1" type="text">
+<input id="tx2" type="text">
+<input id="tx3" type="text">
+<button onclick="sayValue();">クリック</button>
 <script>
   var a = 10
   var a = 20
@@ -38,5 +42,10 @@
 
   function sayHello() {
     alert("こんにちわ");
+  }
+
+  function setValue() {
+    var elm = document.getElementById("tx1");
+    elm.value = "Hello!";
   }
   </script>
