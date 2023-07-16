@@ -3,13 +3,15 @@
 <button onclick="open('homes/top2', null, 'width=300,height=150');">開く</button>
 <script>
   function setValue() {
-  var elm = document.getElementById("tx1");
-  elm.value = "Hello!";
+  var elm = document.getElementsByName("tx1");
+  for (var i = 0; i < elm.length; i++) {
+    elm[i].value = "Hello!";
+    }
   }
 </script>
-<input id="tx1" type="text">
-<input id="tx2" type="text">
-<input id="tx3" type="text">
+<input name="tx1" type="text">
+<input name="tx1" type="text">
+<input name="tx1" type="text">
 <button onclick="setValue();">クリック</button>
 <script>
   var a = 10
