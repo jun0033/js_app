@@ -16,6 +16,7 @@ import '@fortawesome/fontawesome-free/js/all'
 
 import 'animate.css';
 import "jquery.inview.js";
+import "sample.js";
 
 global.$ = jQuery;
 window.$ = jQuery;
