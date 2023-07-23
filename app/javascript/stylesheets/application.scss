@@ -24,6 +24,27 @@ opacity:0;
 
 /* スクロールをしたら出現する要素にはじめに透過0を指定　*/
 
-.fadeUpTrigger{
-    opacity: 0;
+.fadeUpTrigger,
+.fadeInUpTrigger,
+.fadeInDownTrigger,
+.fadeInUpTriggerOnce{
+    opacity:0;
+}
+
+/* アニメーションの回数を決めるCSS*/
+
+.count2{  
+  animation-iteration-count: 2;/*この数字を必要回数分に変更*/
+}
+
+/* アニメーションスタートの遅延時間を決めるCSS*/
+
+.delay-time{  
+  animation-delay: 0.5s;
+}
+
+/* アニメーション自体が変化する時間を決めるCSS*/
+
+.change-time{  
+  animation-duration: 4.5s;/*この数字を変化させたい時間に変更*/
 }

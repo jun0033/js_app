@@ -19,7 +19,35 @@
 <br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓スクロールすると1度だけ動く<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓<br>↓
 
 <div class="box fadeUpTrigger">スクロールしたら1度だけふわっ（下から）</div>
-<!--<script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>-->
+<div class="fadeInUpTrigger box">すぐ現れるボックス</div>
+<div class="fadeInUpTrigger box animate__infinite">アニメーション無限ループ</div>
+<div class="fadeInUpTrigger box count2">独自設定：アニメーション回数指定（2回）</div>
+<!--/flex--></div>
+  
+<!--アニメーションがスタートするタイミング設定-->  
+<div class="flex">
+<div class="fadeInUpTrigger box animate__delay-1s">アニメーションが1秒遅れでスタート</div>
+<div class="fadeInUpTrigger box animate__delay-2s">アニメーションが2秒遅れでスタート</div>
+<div class="fadeInUpTrigger box animate__delay-3s">アニメーションが3秒遅れでスタート</div>
+<div class="fadeInUpTrigger box animate__delay-4s">アニメーションが4秒遅れでスタート</div>
+<div class="fadeInUpTrigger box animate__delay-5s">アニメーションが5秒遅れでスタート</div>
+<div class="fadeInUpTrigger box delay-time">（CSS独自設定）アニメーションが0.5秒遅れでスタート</div>
+<!--/flex--></div>
+  
+<!--アニメーションの変化時間の設定-->
+<div class="flex">
+<div class="fadeInUpTrigger box animate__slow">アニメーションの変化のスピードが遅い</div>
+<div class="fadeInUpTrigger box animate__slower">アニメーションの変化のスピードがさらに遅い</div>
+<div class="fadeInUpTrigger box animate__fast">アニメーションの変化のスピードが速い</div>
+<div class="fadeInUpTrigger box animate__faster">アニメーションの変化のスピードがさらに速い</div>
+<div class="fadeInUpTrigger box change-time">（CSS独自設定）アニメーションの変化のスピードが4.5秒</div>
+<!--/flex--></div>
+    
+<!--スクロールをしたら1度だけアニメーションをする設定 -->
+<div class="fadeInUpTriggerOnce box">スクロールをしたら1度だけアニメーションをする</div>
+
+<!--違う動きを追加指定-->
+<div class="fadeInDownTrigger box">違う動きを追加指定</div>
 <script>
   var a = 10
   var a = 20
