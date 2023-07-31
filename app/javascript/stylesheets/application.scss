@@ -200,8 +200,6 @@ opacity:0;
 }
 
 
-/*========= レイアウトのためのCSS ===============*/
-
 .wrapper{
   overflow: hidden;
 }
@@ -218,4 +216,8 @@ opacity:0;
   background: #666;
   color: #fff;
   box-sizing:border-box;
+}
+
+.wrapper{
+  overflow: hidden;
 }
