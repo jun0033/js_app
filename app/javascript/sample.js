@@ -185,3 +185,10 @@ $(window).on('load',function(){
   $("#splash").delay(1500).fadeOut('slow');//ローディング画面を1.5秒（1500ms）待機してからフェードアウト
   $("#splash_logo").delay(1200).fadeOut('slow');//ロゴを1.2秒（1200ms）待機してからフェードアウト
 });
+
+//開閉ボタンを押した時には
+$(".open-btn1").click(function () {
+    $(this).toggleClass('btnactive');//.open-btnは、クリックごとにbtnactiveクラスを付与＆除去。1回目のクリック時は付与
+    $("#search-wrap").toggleClass('panelactive');//#search-wrapへpanelactiveクラスを付与
+  $('#search-text').focus();//テキスト入力のinputにフォーカス
+});
